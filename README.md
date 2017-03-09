@@ -41,7 +41,7 @@ pyPaSWAS is required as a module. Run in the following two commands in the Pacas
 Running the software
 -------------------- 
 
-The one input file is mandatory: the PacBio read file. Through the options the user can specify the file type of the input file (default: fasta), an output file and a log file. When requested, Pacasus will terminate if the output file already exists.
+The PacBio read input file is mandatory, by setting options one can specify the type of input file (default: fasta), the output file and a log file. When requested, Pacasus will terminate if the output file already exists.
 
 Run it by calling:
 - *python pacasus.py |options| readsFile*
@@ -51,15 +51,15 @@ Help file:
 
 Selection your device
 ---------------------
-By default, pypaswas will use the first CPU device. This can be changed by using:
+By default, pacasus will use the first CPU device. This can be changed by using:
 - *--device_type=[CPU|GPU]*
 - *--platform_name=[Intel|NVIDIA]*
 - *--framework=[opencl|CUDA]*
 - *--device=[int]*
 
-For example, this will select the CPU: --device_type=CPU --platform_name=Intel --framework=opencl
+For example, these settings will select the CPU: --device_type=CPU --platform_name=Intel --framework=opencl
 
-This will select the second NVIDIA GPU: --device_type=GPU --platform_name=NVIDIA --framework=CUDA --device=1
+These will select the second NVIDIA GPU: --device_type=GPU --platform_name=NVIDIA --framework=CUDA --device=1
 
 
 Examples
